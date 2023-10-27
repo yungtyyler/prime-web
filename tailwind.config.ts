@@ -22,7 +22,10 @@ const config: Config = {
         'prime-purple-500': '#7A209E',
         'prime-purple-700': '#561670',
         'prime-purple-900': '#3B0F4D',
-      }
+        'dark-charcoal': '#333333',
+        'bright-gray': '#EEEEEE'
+      },
+      darkMode: 'class',
     },
   },
   plugins: [],

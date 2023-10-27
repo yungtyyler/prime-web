@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.subnav-dropdown {
+    @apply flex flex-col text-base font-normal bg-white absolute left-0 pl-4 w-[200px] py-6 items-start drop-shadow-2xl gap-2 transition ease-in-out duration-150 origin-top;
+}
