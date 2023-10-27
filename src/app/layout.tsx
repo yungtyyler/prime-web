@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Header, Footer } from '@/components'
 
 export const metadata: Metadata = {
   title: 'Prime Web Solutions',
@@ -12,8 +10,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
+      <body className='font-sen-bold'>
+        <Header />
+          <div className='max-w-6xl mx-auto h-[100vh] flex flex-col'>
+            {children}
+          </div>
+        <Footer />
       </body>
     </html>
   )
