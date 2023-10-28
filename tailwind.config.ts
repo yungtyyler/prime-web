@@ -17,11 +17,10 @@ const config: Config = {
         'sans': ['Lato', 'sans-serif'],
       },
       colors: {
-        'prime-purple-100': '#B930F0',
-        'prime-purple-300': '#9A28C7',
         'prime-purple-500': '#7A209E',
         'prime-purple-700': '#561670',
-        'prime-purple-900': '#3B0F4D',
+        'prime-green-500': '#C1FF00',
+        'prime-green-700': '#85B000',
         'dark-charcoal': '#333333',
         'bright-gray': '#EEEEEE'
       },
