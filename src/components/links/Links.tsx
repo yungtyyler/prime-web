@@ -13,3 +13,8 @@ export const ServicesLinks: Links[] = [
     { href: '/services/seo', title: 'SEO' },
     { href: '/services/consulting', title: 'Consulting' },
 ]
+
+export const FooterLinks: Links[] = [
+    { href: '/', title: 'Privacy Policy' },
+    { href: '/', title: 'Terms of Service' },
+]

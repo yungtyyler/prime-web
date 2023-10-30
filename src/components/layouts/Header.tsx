@@ -56,13 +56,6 @@ const Header = () => {
             {/* Sidebar Nav Menu */}
             <div ref={menuref} className={`sidebar ${open ? 'lg:hidden flex translate-x-0' : '-translate-x-[100%]'}`}>
                 <div className={`flex justify-between items-center p-4 ${open ? 'opacity-100 delay-150' : 'opacity-0'} transition-opacity ease-in-out duration-150`}>
-                    {/* <Image
-                        src={'/logo-png/logo-white.png'}
-                        width={5000}
-                        height={3000}
-                        alt='Prime Web Solutions Logo'
-                        className="max-w-[80px]"
-                    /> */}
                     <h1 className='text-prime-green-700 text-3xl uppercase font-bold text-start'>Prime Web Solutions</h1>
                     <button className='text-white' onClick={() => handleClick()}>
                         <HamburgerX open={open} />
