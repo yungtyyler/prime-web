@@ -1,15 +1,14 @@
-export { default as Header } from './layouts/Header'
-export { default as Footer } from './layouts/Footer'
+export { default as Header } from './layouts/Header';
+export { default as Footer } from './layouts/Footer';
+export { default as Hero } from './sections/Hero';
+export { default as ServicesCarousel } from './sections/ServicesCarousel';
+export { default as CarouselCard } from './misc/CarouselCard';
+export { NavLinks, ServicesLinks, FooterLinks } from './links/Links';
 export {
-    NavLinks,
-    ServicesLinks,
-    FooterLinks,
-} from './links/Links'
-export {
-    HamburgerX,
-    DownChevron,
-    InstagramLight,
-    InstagramDark,
-    LinkedInLight,
-    LinkedInDark,
-} from './icons/Icons'
+  HamburgerX,
+  DownChevron,
+  InstagramLight,
+  InstagramDark,
+  LinkedInLight,
+  LinkedInDark,
+} from './icons/Icons';
