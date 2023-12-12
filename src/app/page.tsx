@@ -5,8 +5,8 @@ export default function Home() {
     <section>
       <Hero />
       <div className="page__container">
-        <div className="my-4">
-          <h1 className="uppercase text-prime-purple-700 font-extrabold text-4xl text-center pb-8">
+        <div className="my-4 flex flex-col items-center">
+          <h1 className="uppercase text-prime-purple-700 font-extrabold text-4xl">
             What we can do for you
           </h1>
           <ServicesCarousel />

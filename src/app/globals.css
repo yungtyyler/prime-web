@@ -23,5 +23,5 @@
 }
 
 .hero__container {
-    @apply w-full flex flex-col gap-4 md:gap-6 md:flex-row items-center bg-hero-pattern bg-cover bg-center md:px-10 p-4 md:h-[50vh];
+    @apply w-full flex flex-col gap-4 md:gap-6 md:flex-row items-center bg-hero-pattern bg-cover bg-center md:px-10 p-4 md:min-h-[70vh];
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Header, Footer } from '@/components';
+import { oswald, roboto } from '@/fonts/fonts';
 
 export const metadata: Metadata = {
   title: 'Prime Web Solutions',
@@ -15,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-sen-bold">
+      <body className={`${roboto.className}`}>
         <div className="flex flex-col h-screen justify-between">
           <Header />
           <main className="grow relative w-full flex flex-col">{children}</main>
