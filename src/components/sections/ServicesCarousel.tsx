@@ -26,10 +26,10 @@ const ServicesCarousel = ({ slides }: { slides: Slide[] }) => {
 
   return (
     <div className="h-full relative flex flex-col items-center">
-      <div className="absolute top-2 px-12 my-4 bg-white bg-opacity-75 rounded text-[1.5em] tracking-wider uppercase font-bold">
+      <div className="absolute top-2 md:px-12 px-1 my-4 bg-white bg-opacity-75 rounded text-[1.5em] tracking-wider uppercase font-bold">
         {slides[currentSlide].title}
       </div>
-      <div className="absolute bottom-10 w-[80%] px-10 my-4 bg-black bg-opacity-80 text-white text-[1.1em] rounded">
+      <div className="absolute md:block hidden bottom-10 w-[80%] px-10 my-4 bg-black bg-opacity-80 text-white text-[1.1em] rounded">
         {slides[currentSlide].description}
       </div>
       <div className="leftArrow" onClick={prevSlide}>
