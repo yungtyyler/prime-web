@@ -49,7 +49,11 @@ const ServicesCarousel = ({ slides }: { slides: Slide[] }) => {
             className="mx-1 cursor-pointer text-[20px]"
             onClick={() => goToSlide(slide.id)}
           >
-            &#11044;
+            {currentSlide === slide.id ? (
+              <span>&#11044;</span>
+            ) : (
+              <span className="">&#9711;</span>
+            )}
           </div>
         ))}
       </div>
