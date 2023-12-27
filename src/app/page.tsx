@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:items-center justify-between my-10 gap-4">
-          <div className="flex flex-col gap-4 md:items-end md:bg-off-white drop-shadow-2xl rounded w-full h-full justify-center px-4">
+          <div className="flex flex-col gap-4 md:items-start items-center md:bg-off-white drop-shadow-2xl rounded w-full h-full justify-center px-4">
             <h2 className="text-[1.6em] uppercase font-bold">About Us</h2>
             <p className="tracking-wide">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
@@ -84,7 +84,7 @@ export default function Home() {
             priority
             className="max-w-full object-contain mx-auto rounded"
           />
-          <div className="flex flex-col gap-4 md:items-end md:bg-off-white drop-shadow-2xl rounded w-full h-full justify-center px-4">
+          <div className="flex flex-col gap-4 md:items-end items-center md:bg-off-white drop-shadow-2xl rounded w-full h-full justify-center px-4">
             <h2 className="text-[1.6em] uppercase font-bold">Get In Touch</h2>
             <p className="tracking-wide">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
