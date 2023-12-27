@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer className="w-full bg-prime-purple-700 lg:px-4">
       <div className="md:max-w-6xl mx-auto w-full py-6 px-4 flex flex-col lg:gap-12 lg:flex-row lg:items-center  text-white">
-        <div className="flex flex-col lg:items-center gap-4 lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-4 lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
+          <div className="flex items-center gap-2">
             <Image
               src="/logo-png/logo-white.png"
               width={5000}
@@ -26,37 +26,40 @@ const Footer = () => {
           </div>
           <p className="font-bold">
             Phone:{' '}
-            <a
+            <Link
               className="text-gray-300 font-thin hover:text-prime-green-500 w-fit"
               href="tel:+19166229065"
             >
               (916) 622-9065
-            </a>
+            </Link>
           </p>
-          <div className="flex lg:justify-between gap-6">
+          <p className="font-bold">
+            Email:{' '}
+            <Link
+              className="text-gray-300 font-thin hover:text-prime-green-500 w-fit"
+              href="email:primewebsolutionsllc@gmail.com"
+            >
+              primewebsolutionsllc@gmail.com
+            </Link>
+          </p>
+          <div className="flex lg:justify-center gap-6">
             <Link
               href="https://www.instagram.com/primewebsolutionsllc/"
               target="_blank"
               className="hover:scale-[105%] transition ease-in-out duration-200"
             >
-              <InstagramDark
-                size={35}
-                color="white"
-              />
+              <InstagramDark size={35} color="white" />
             </Link>
             <Link
               href="/"
               target="_blank"
               className="hover:scale-[105%] transition ease-in-out duration-200"
             >
-              <LinkedInDark
-                size={35}
-                color="white"
-              />
+              <LinkedInDark size={35} color="white" />
             </Link>
           </div>
         </div>
-        <div className="flex flex-col lg:items-center lg:border-none border-b border-gray-500 w-full py-4 lg:py-0">
+        <div className="flex flex-col lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
           <div className="flex">
             <h1 className="w-full uppercase font-bold">Site Map</h1>
           </div>
@@ -72,7 +75,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col lg:items-center lg:border-none border-b border-gray-500 w-full py-4 lg:py-0">
+        <div className="flex flex-col lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
           <div className="flex">
             <h1 className="w-full uppercase font-bold">Useful Links</h1>
           </div>

@@ -9,14 +9,12 @@ const ServicesCarousel = ({ slides }: { slides: Slide[] }) => {
   const prevSlide = () => {
     const isFirstSlide = currentSlide === 0;
     const newSlide = isFirstSlide ? slides.length - 1 : currentSlide - 1;
-    console.log(newSlide);
     setCurrentSlide(newSlide);
   };
 
   const nextSlide = () => {
     const isLastSlide = currentSlide === slides.length - 1;
     const newSlide = isLastSlide ? 0 : currentSlide + 1;
-    console.log(newSlide);
     setCurrentSlide(newSlide);
   };
 
