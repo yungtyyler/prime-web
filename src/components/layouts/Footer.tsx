@@ -37,7 +37,7 @@ const Footer = () => {
             Email:{' '}
             <Link
               className="text-gray-300 font-thin hover:text-prime-green-500 w-fit"
-              href="email:primewebsolutionsllc@gmail.com"
+              href="mailto:primewebsolutionsllc@gmail.com"
             >
               primewebsolutionsllc@gmail.com
             </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
               <InstagramDark size={35} color="white" />
             </Link>
             <Link
-              href="/"
+              href="https://www.linkedin.com/company/prime-web-solutions-llc/"
               target="_blank"
               className="hover:scale-[105%] transition ease-in-out duration-200"
             >
@@ -94,7 +94,7 @@ const Footer = () => {
       </div>
       <div className="w-full px-6 flex justify-between items-center md:flex-row flex-col lg:pt-6 pb-4 lg:border-t-[1px] border-t-gray-500">
         <p className="text-center text-gray-300 font-thin tracking-wider mx-auto">
-          © 2021 Prime Web Solutions LLC. All Rights Reserved.
+          © 2023 Prime Web Solutions LLC. All Rights Reserved.
         </p>
       </div>
     </footer>
