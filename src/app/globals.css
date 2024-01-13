@@ -19,11 +19,11 @@
 }
 
 .section__container {
-  @apply md:container mx-auto py-8 px-4;
+  @apply bg-off-white flex flex-col items-center justify-center w-full h-full dark:bg-dark-charcoal dark:text-white;
 }
 
 .hero__container {
-  @apply w-full flex flex-col gap-4 md:gap-6 md:flex-row items-center bg-hero-pattern bg-cover bg-center md:px-10 p-4 md:min-h-[70vh];
+  @apply w-full h-full flex flex-col gap-4 md:gap-6 md:flex-row items-center bg-hero-pattern bg-cover bg-center md:px-10 p-4;
 }
 
 /* Carousel */

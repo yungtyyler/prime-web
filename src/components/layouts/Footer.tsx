@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="flex flex-col text-sm text-gray-300 gap-2 font-extralight tracking-wdier mt-2">
             {NavLinks.map((link, i) => (
               <Link
-                href={link.href}
+                href={`#${link.title.toLowerCase()}`}
                 key={i}
                 className="hover:text-prime-green-500 w-fit"
               >

@@ -15,15 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${roboto.className}`}>
-        <div className="h-screen">
-          <Header />
-          <main className="relative w-full flex flex-col tracking-wider">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <Header />
+        <main className="relative w-full flex flex-col tracking-wider">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

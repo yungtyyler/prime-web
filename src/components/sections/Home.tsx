@@ -6,7 +6,9 @@ const Hero = () => {
       <div className="grid md:grid-cols-2 gap-10 py-12 justify-center items-center md:max-w-6xl mx-auto">
         <div className="col-span-1">
           <div className="py-10 px-16 bg-white drop-shadow-lg border border-gray-200 rounded text-center md:text-start flex flex-col gap-4">
-            <h1 className="text-4xl font-bold uppercase">Prime Web Solutions</h1>
+            <h1 className="text-4xl font-bold uppercase">
+              Prime Web Solutions
+            </h1>
             <p className="text-2xl">
               Let us help you make your dreams a reality
             </p>
