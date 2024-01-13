@@ -7,6 +7,10 @@ export const metadata: Metadata = {
 };
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div>
+      <h1>About Us</h1>
+    </div>
+  );
 };
 export default About;

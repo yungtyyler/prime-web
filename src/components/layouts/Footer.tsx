@@ -11,6 +11,38 @@ const Footer = () => {
   return (
     <footer className="w-full bg-prime-purple-700 lg:px-4">
       <div className="md:max-w-6xl mx-auto w-full py-6 px-4 flex flex-col lg:gap-12 lg:flex-row lg:items-center  text-white">
+        <div className="flex flex-col lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
+          <div className="flex">
+            <h1 className="w-full uppercase font-bold">Site Map</h1>
+          </div>
+          <div className="flex flex-col text-sm text-gray-300 gap-2 font-extralight tracking-wdier mt-2">
+            {NavLinks.map((link, i) => (
+              <Link
+                href={link.href}
+                key={i}
+                className="hover:text-prime-green-500 w-fit"
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-col lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
+          <div className="flex">
+            <h1 className="w-full uppercase font-bold">Useful Links</h1>
+          </div>
+          <div className="flex flex-col text-sm text-gray-300 gap-2 font-extralight tracking-wdier mt-2">
+            {FooterLinks.map((link, i) => (
+              <Link
+                href={link.href}
+                key={i}
+                className="hover:text-prime-green-500 w-fit"
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
+        </div>
         <div className="flex flex-col gap-4 lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
           <div className="flex items-center gap-2">
             <Image
@@ -57,38 +89,6 @@ const Footer = () => {
             >
               <LinkedInDark size={35} color="white" />
             </Link>
-          </div>
-        </div>
-        <div className="flex flex-col lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
-          <div className="flex">
-            <h1 className="w-full uppercase font-bold">Site Map</h1>
-          </div>
-          <div className="flex flex-col text-sm text-gray-300 gap-2 font-extralight tracking-wdier mt-2">
-            {NavLinks.map((link, i) => (
-              <Link
-                href={link.href}
-                key={i}
-                className="hover:text-prime-green-500 w-fit"
-              >
-                {link.title}
-              </Link>
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-col lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
-          <div className="flex">
-            <h1 className="w-full uppercase font-bold">Useful Links</h1>
-          </div>
-          <div className="flex flex-col text-sm text-gray-300 gap-2 font-extralight tracking-wdier mt-2">
-            {FooterLinks.map((link, i) => (
-              <Link
-                href={link.href}
-                key={i}
-                className="hover:text-prime-green-500 w-fit"
-              >
-                {link.title}
-              </Link>
-            ))}
           </div>
         </div>
       </div>
