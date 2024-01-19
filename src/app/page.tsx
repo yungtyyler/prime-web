@@ -2,7 +2,7 @@
 
 import 'swiper/css';
 import {
-  Hero,
+  HomeSection,
   AboutSection,
   ContactSection,
   ServicesSection,
@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react';
 
 export default function Home() {
   const sections: Section[] = [
-    { id: 0, name: 'home', component: <Hero /> },
+    { id: 0, name: 'home', component: <HomeSection /> },
     { id: 1, name: 'about', component: <AboutSection /> },
     { id: 2, name: 'services', component: <ServicesSection /> },
     { id: 3, name: 'contact', component: <ContactSection /> },
@@ -42,17 +42,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full overflow-x-hidden">
       {sections.map((section) => (
-        <div
-          key={section.id}
-          className={`w-full h-screen ${
-            section.id === sections.length - 1
-              ? ''
-              : 'border-b border-gray-300 dark:border-gray-600'
-          }`}
-          id={section.name}
-        >
+        <div key={section.id} className="w-full h-screen" id={section.name}>
           {section.component}
         </div>
       ))}
@@ -60,7 +52,7 @@ export default function Home() {
       <button
         className={`${
           isVisible ? 'opacity-100' : 'opacity-0'
-        } transition ease-in-out duration-300 fixed bottom-4 right-4 z-[100] text-white font-bold text-[1.2em] bg-dark-charcoal hover:brightness-95 hover:scale-105 px-4 py-2 border border-gray-500 rounded-full dark:bg-off-white dark:text-black dark:border-gray-400`}
+        } transition ease-in-out duration-300 fixed bottom-4 right-4 z-[100] text-white font-bold text-[1.2em] bg-prime-jet hover:bg-prime-eerie-black hover:scale-105 px-4 py-2 border border-gray-500 rounded-full`}
         onClick={() => scrollToTop()}
       >
         &#8593;

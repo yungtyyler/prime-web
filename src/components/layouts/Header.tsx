@@ -1,7 +1,6 @@
 'use client';
 
-import Image from 'next/image';
-import { HamburgerX, NavLinks } from '@/components';
+import { HamburgerX, LogoSVG, NavLinks, ThemeSwitcher } from '@/components';
 import Link from 'next/link';
 import { useState, useRef, useEffect, MutableRefObject } from 'react';
 import { usePathname } from 'next/navigation';
@@ -32,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-bright-gray z-[100] sticky top-0">
+    <header className="w-full bg-bright-gray z-[100] transition-colors ease-in-out duration-300 bg-transparent absolute top-0">
       {/* Sidebar Nav Menu */}
       <div
         ref={menuref}
@@ -45,19 +44,23 @@ const Header = () => {
             open ? 'opacity-100 delay-150' : 'opacity-0'
           } transition-opacity ease-in-out duration-150`}
         >
-          <h1 className="text-prime-green-700 text-3xl uppercase font-bold text-start">
+          <h1 className="text-prime-saffron text-3xl uppercase font-bold text-start">
             Prime Web Solutions
           </h1>
-          <button className="text-white" onClick={() => handleClick()}>
+          <div
+            className="text-white cursor-pointer"
+            onClick={() => handleClick()}
+          >
             <HamburgerX open={open} />
-          </button>
+          </div>
         </div>
-        <div className="flex flex-col-reverse items-start gap-8 py-14 border-b border-gray-600">
+        <div className="flex flex-col items-start gap-8 py-14 border-b border-gray-600">
           {NavLinks.map((link, i) => (
             <div key={i} className="w-full text-start">
               <Link
                 href={`#${link.title.toLowerCase()}`}
-                className="hover:text-prime-green-500 text-xl px-2"
+                onClick={() => handleClick()}
+                className="hover:text-prime-saffron-700 text-xl px-2 transition-colors ease-in-out duration-200"
               >
                 {link.title}
               </Link>
@@ -68,34 +71,33 @@ const Header = () => {
 
       {/* Desktop Nav Menu */}
       <div className="md:max-w-6xl mx-auto w-full p-4 flex justify-between">
-        <button className="md:hidden" onClick={() => handleClick()}>
+        <div
+          className="md:hidden absolute top-0 bottom-0 flex items-center cursor-pointer"
+          onClick={() => handleClick()}
+        >
           <HamburgerX open={open} />
-        </button>
-        <div className="flex items-center gap-4 mx-auto md:mx-0 hover:scale-[105%] transition ease-in duration-150">
-          <Link href="#home">
-            <Image
-              src="/logo-png/logo-purple.png"
-              width={5000}
-              height={3000}
-              alt="Prime Web Solutions Logo"
-              className="max-w-[80px]"
-              priority
-            />
-          </Link>
+        </div>
+        <div className="flex items-center gap-4 mx-auto md:mx-0">
+          <LogoSVG className="text-prime-eerie-black" />
         </div>
 
-        <nav className="md:flex items-center gap-10 hidden">
+        <nav className="md:flex items-center gap-10 hidden text-prime-purple-700">
           {NavLinks.map((link, i) => (
             <div key={i} className="relative">
               <Link
                 href={`#${link.title.toLowerCase()}`}
-                className="uppercase hover:text-prime-purple-500 text-prime-purple-700 transition ease-in-out duration-200 font-bold"
+                className="group uppercase hover:text-prime-jet transition ease-in-out duration-200 font-bold"
               >
                 {link.title}
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-prime-saffron" />
               </Link>
             </div>
           ))}
         </nav>
+        {/* uncomment when finished, or restyling for dark mode */}
+        {/* <div className="absolute md:static right-6 self-center">
+          <ThemeSwitcher />
+        </div> */}
       </div>
     </header>
   );

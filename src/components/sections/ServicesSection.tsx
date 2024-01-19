@@ -1,8 +1,8 @@
-'use client';
-
 import Slide from '@/types/slide';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-cube';
+import { Carousel } from '@/components';
 
 const ServicesSection = () => {
   const slides: Slide[] = [
@@ -32,13 +32,16 @@ const ServicesSection = () => {
       title: 'Consulting',
       image: '/carousel/consulting.jpg',
       description:
-        'Consulting is the process of providing expert advice to a client. It includes aspects such as consulting, consulting, and consulting.',
+        'We can help you with your business needs. We offer consulting services for anything you may need regarding websites, internal apps, and more. We are here to help you succeed.',
     },
   ];
 
   return (
-    <div className="section__container">
-      <Swiper></Swiper>
+    <div className="section__container bg-gradient-to-b from-prime-platinum via-prime-alabaster to-white">
+      <h2 className="heading-text mt-12">Services We Provide</h2>
+      <div className="w-full h-full flex items-center justify-center">
+        <Carousel slides={slides} />
+      </div>
     </div>
   );
 };

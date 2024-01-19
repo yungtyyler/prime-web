@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -18,13 +19,12 @@ const config: Config = {
         sans: ["Lato", "sans-serif"],
       },
       colors: {
-        "prime-purple-500": "#7A209E",
-        "prime-purple-700": "#561670",
-        "prime-green-500": "#C1FF00",
-        "prime-green-700": "#85B000",
-        "dark-charcoal": "#333333",
-        "bright-gray": "#EEEEEE",
-        "off-white": "#fffff9",
+        "prime-platinum": "#CFDBD5",
+        "prime-alabaster": "#E8EDDF",
+        "prime-saffron": "#F5CB5C",
+        "prime-saffron-700": "#E6AD0F",
+        "prime-eerie-black": "#242423",
+        "prime-jet": "#333533",
       },
       darkMode: "class",
     },

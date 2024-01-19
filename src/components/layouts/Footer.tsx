@@ -9,9 +9,9 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-prime-purple-700 lg:px-4">
+    <footer className="w-full bg-prime-jet dark:bg-prime-eerie-black lg:px-4">
       <div className="md:max-w-6xl mx-auto w-full py-6 px-4 flex flex-col lg:gap-12 lg:flex-row lg:items-center  text-white">
-        <div className="flex flex-col lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
+        <div className="flex flex-col lg:border-none border-b border-white border-opacity-30 w-full py-4 lg:py-0">
           <div className="flex">
             <h1 className="w-full uppercase font-bold">Site Map</h1>
           </div>
@@ -20,30 +20,30 @@ const Footer = () => {
               <Link
                 href={`#${link.title.toLowerCase()}`}
                 key={i}
-                className="hover:text-prime-green-500 w-fit"
+                className="hover:text-gray-100 w-fit"
               >
                 {link.title}
               </Link>
             ))}
           </div>
         </div>
-        <div className="flex flex-col lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
+        <div className="flex flex-col lg:border-none border-b border-white border-opacity-30 w-full py-4 lg:py-0">
           <div className="flex">
             <h1 className="w-full uppercase font-bold">Useful Links</h1>
           </div>
-          <div className="flex flex-col text-sm text-gray-300 gap-2 font-extralight tracking-wdier mt-2">
+          <div className="flex flex-col text-sm text-gray-300 gap-2 font-extralight tracking-wider mt-2">
             {FooterLinks.map((link, i) => (
               <Link
                 href={link.href}
                 key={i}
-                className="hover:text-prime-green-500 w-fit"
+                className="hover:text-gray-100 w-fit"
               >
                 {link.title}
               </Link>
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-4 lg:border-none border-b border-prime-green-700 w-full py-4 lg:py-0">
+        <div className="flex flex-col gap-4 lg:border-none border-b border-white border-opacity-30 w-full py-4 lg:py-0">
           <div className="flex items-center gap-2">
             <Image
               src="/logo-png/logo-white.png"
@@ -59,7 +59,7 @@ const Footer = () => {
           <p className="font-bold">
             Phone:{' '}
             <Link
-              className="text-gray-300 font-thin hover:text-prime-green-500 w-fit"
+              className="text-gray-300 font-thin hover:text-gray-100 w-fit"
               href="tel:+19166229065"
             >
               (916) 622-9065
@@ -68,7 +68,7 @@ const Footer = () => {
           <p className="font-bold">
             Email:{' '}
             <Link
-              className="text-gray-300 font-thin hover:text-prime-green-500 w-fit"
+              className="text-gray-300 font-thin hover:text-gray-100 w-fit"
               href="mailto:primewebsolutionsllc@gmail.com"
             >
               primewebsolutionsllc@gmail.com
