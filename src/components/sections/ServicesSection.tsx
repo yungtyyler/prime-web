@@ -37,12 +37,14 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="section__container bg-gradient-to-b from-prime-platinum via-prime-alabaster to-white">
-      <h2 className="heading-text mt-12">Services We Provide</h2>
-      <div className="w-full h-full flex items-center justify-center">
-        <Carousel slides={slides} />
+    <section className="w-full h-full bg-gradient-to-b from-prime-platinum via-prime-alabaster to-white">
+      <div className="section__container">
+        <h2 className="heading-text mt-12">Services We Provide</h2>
+        <div className="w-full h-full flex items-center justify-center">
+          <Carousel slides={slides} />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default ServicesSection;

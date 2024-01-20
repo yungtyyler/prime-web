@@ -19,7 +19,7 @@ const SplitContent = ({ left }: { left?: boolean }) => {
               isInView
                 ? 'translate-x-0 opacity-100'
                 : '-translate-x-[100%] opacity-0'
-            } md:max-w-[75%] w-full h-full bg-gradient-to-r from-prime-saffron to-prime-saffron-700 shadow-lg rounded-r-xl absolute -left-4 top-0 transition-all ease-out duration-[1250ms] flex flex-col md:items-start items-center justify-center p-8 md:text-start text-center md:gap-12 gap-2 text-prime-eerie-black`}
+            } md:max-w-[75%] w-full h-full bg-gradient-to-r from-prime-saffron to-prime-saffron-700 shadow-lg md:rounded-xl rounded-r-xl absolute -left-4 top-0 transition-all ease-out duration-[1250ms] flex flex-col md:items-start items-center justify-center p-8 md:text-start text-center md:gap-12 gap-2 text-prime-eerie-black`}
           >
             <h3 className="text-[2em] font-bold">
               Lorem ipsum dolor sit amet.
@@ -41,7 +41,7 @@ const SplitContent = ({ left }: { left?: boolean }) => {
               isInView
                 ? 'translate-x-0 opacity-100'
                 : 'translate-x-[100%] opacity-0'
-            } md:max-w-[75%] w-full h-full bg-gradient-to-r to-prime-jet from-prime-eerie-black shadow-lg rounded-l-xl absolute -right-4 top-0 transition-all ease-out duration-[1250ms] flex flex-col md:items-end items-center justify-center p-8 md:text-end text-center md:gap-12 gap-2 text-white`}
+            } md:max-w-[75%] w-full h-full bg-gradient-to-r to-prime-jet from-prime-eerie-black shadow-lg md:rounded-xl rounded-l-xl absolute -right-4 top-0 transition-all ease-out duration-[1250ms] flex flex-col md:items-end items-center justify-center p-8 md:text-end text-center md:gap-12 gap-2 text-white`}
           >
             <h3 className="text-[2em] font-bold">
               Lorem ipsum dolor sit amet.

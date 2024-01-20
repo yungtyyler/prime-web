@@ -19,7 +19,7 @@
 }
 
 .section__container {
-  @apply flex flex-col w-full h-full px-4 py-12;
+  @apply flex flex-col w-full h-full px-4 py-12 max-w-6xl mx-auto;
 }
 
 .hero__container {
