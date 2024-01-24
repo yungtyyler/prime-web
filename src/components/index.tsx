@@ -8,6 +8,7 @@ export { default as HomeBanner } from './misc/HomeBanner';
 export { default as ThemeSwitcher } from './ThemeSwitcher';
 export { default as Carousel } from './misc/Carousel';
 export { default as SplitContent } from './misc/SplitContent';
+export { default as ContactForm } from './misc/ContactForm';
 export {
   HamburgerX,
   DownChevron,

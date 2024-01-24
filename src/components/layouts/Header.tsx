@@ -18,8 +18,10 @@ const Header = () => {
     const handleClickOutside = (e: MouseEvent) => {
       if (menuref.current && !menuref.current.contains(e.target as Node)) {
         setOpen(false);
+        document.body.style.overflow = 'auto';
       }
     };
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
@@ -27,7 +29,13 @@ const Header = () => {
   });
 
   const handleClick = () => {
-    open ? setOpen(false) : setOpen(true);
+    if (open) {
+      setOpen(false);
+      document.body.style.overflow = 'auto';
+    } else {
+      setOpen(true);
+      document.body.style.overflow = 'hidden';
+    }
   };
 
   return (
