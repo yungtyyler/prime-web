@@ -27,7 +27,7 @@
 }
 
 .heading-text {
-  @apply uppercase font-bold text-[3.4em] text-prime-jet md:mt-12 mt-6;
+  @apply uppercase font-bold text-[3.4em] md:text-start text-center text-prime-jet md:mt-12 mt-6;
 }
 
 /* Carousel */

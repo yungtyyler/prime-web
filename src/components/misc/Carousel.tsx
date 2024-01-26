@@ -59,7 +59,7 @@ const Carousel = ({ slides }: { slides: Slide[] }) => {
               priority
               className="object-cover w-full h-full max-h-[500px]"
             />
-            <div className="p-8 w-full h-[350px]">
+            <div className="p-8 w-full h-full">
               <h2 className="uppercase font-bold tracking-widest pb-6 text-[2em] md:text-[3em] text-prime-saffron">
                 {slide.title}
               </h2>

@@ -51,9 +51,9 @@ const SplitContent = ({ left }: { left?: boolean }) => {
               Our Mission Is To Help You
             </h3>
             <p className="md:max-w-[80%] sm:text-[1.4em] text-[0.8em] w-full">
-              We have a deep passion about for welb development and a love for
-              helping others. We strive to provide the best possible service to
-              our clients, and we are always looking for new ways to improve our
+              We have a deep passion for web development and a love for helping
+              others. We strive to provide the best possible service to our
+              clients, and we are always looking for new ways to improve our
               services. We are here to help you with your website and
               application needs, so don't hesitate to reach out to us!
             </p>
