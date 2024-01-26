@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/misc/ContactForm.js"
+    "src/components/misc/ContactForm.tsx"
   ],
   "exclude": ["node_modules"]
 }
