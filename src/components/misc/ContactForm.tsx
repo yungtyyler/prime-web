@@ -13,8 +13,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="grid grid-cols-2 gap-6 w-full max-w-[500px] h-fit border border-transparent p-4 rounded-xl justify-center bg-prime-jet"
-      // action={(formData) => sendEmail(formData)}
+      className="grid grid-cols-2 md:gap-6 gap-2 w-full max-w-[500px] max-h-[350px] md:max-h-full border border-transparent p-4 rounded-xl justify-center bg-prime-jet md:text-[1em] text-[0.8em]"
       onSubmit={(e) => emailHandler(e)}
       id="contact-form"
     >
@@ -63,12 +62,12 @@ const ContactForm = () => {
           id="message"
           cols={30}
           rows={5}
-          className="w-full p-1"
+          className="w-full p-1 overflow-scroll resize-none"
         ></textarea>
       </div>
       <button
         type="submit"
-        className="bg-white text-black w-fit py-2 px-6 rounded font-bold uppercase hover:brightness-95 transition-all duration-200 ease-in-out col-span-full"
+        className="bg-white text-black w-fit md:py-2 py-1 px-6 rounded font-bold uppercase hover:brightness-95 transition-all duration-200 ease-in-out col-span-full md:text-[1em] text-[0.8em]"
       >
         Send
       </button>

@@ -21,7 +21,7 @@ import 'swiper/css/pagination';
 const Carousel = ({ slides }: { slides: Slide[] }) => {
   return (
     <Swiper
-      className="w-full max-w-6xl"
+      className="w-full max-w-6xl max-h-full"
       modules={[Navigation, EffectCoverflow, Autoplay, Pagination]}
       style={
         {
@@ -57,15 +57,13 @@ const Carousel = ({ slides }: { slides: Slide[] }) => {
               width={1920}
               height={1080}
               priority
-              className="object-cover w-full h-full max-h-[500px]"
+              className="object-cover w-full h-full md:max-h-[500px]"
             />
             <div className="p-8 w-full h-full">
-              <h2 className="uppercase font-bold tracking-widest pb-6 text-[2em] md:text-[3em] text-prime-saffron">
+              <h2 className="uppercase font-bold tracking-widest pb-6 text-[1.2em] md:text-[3em] text-prime-saffron">
                 {slide.title}
               </h2>
-              <p className="md:text-[1.4em] text-[1.1em]">
-                {slide.description}
-              </p>
+              <p className="md:text-[1.4em] text-[1em]">{slide.description}</p>
             </div>
           </div>
         </SwiperSlide>
