@@ -27,7 +27,11 @@ const SplitContent = ({ left }: { left?: boolean }) => {
             <p className="md:max-w-[90%] sm:text-[1.4em] text-[1em] w-full">
               Prime Web Solutions was founded in June of 2023 by our{' '}
               <strong>CEO Tyler Varzeas</strong>.{' '}
-              <span className="sm:block hidden">
+              <span className="sm:hidden inline">
+                He has combined his passion for helping others and application
+                development to bring you Prime Web Solutions.
+              </span>
+              <span className="sm:inline hidden">
                 Tyler has been working in the web development industry since
                 2022, and has years of extensive problem-solving and research
                 skills to supplement his passion for creating beautiful
@@ -56,7 +60,11 @@ const SplitContent = ({ left }: { left?: boolean }) => {
             <p className="md:max-w-[90%] sm:text-[1.4em] text-[1em] w-full">
               We have a deep passion for web development and a love for helping
               others.{' '}
-              <span className="sm:block hidden">
+              <span className="sm:hidden inline">
+                We are here to help you with your website and application needs,
+                so don't hesitate to reach out to us!
+              </span>
+              <span className="sm:inline hidden">
                 We strive to provide the best possible service to our clients,
                 and we are always looking for new ways to improve our services.
                 We are here to help you with your website and application needs,
