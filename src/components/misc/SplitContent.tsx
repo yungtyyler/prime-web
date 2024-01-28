@@ -52,7 +52,7 @@ const SplitContent = ({ left }: { left?: boolean }) => {
               isInView
                 ? 'translate-x-0 opacity-100'
                 : 'translate-x-[100%] opacity-0'
-            } md:max-w-[75%] w-full h-full bg-gradient-to-r to-prime-jet from-prime-eerie-black shadow-lg md:rounded-xl rounded-l-xl absolute -right-4 top-0 transition-all ease-out duration-[1250ms] flex flex-col md:items-end items-center justify-center p-8 md:text-end text-center lg:gap-12 gap-2 text-white`}
+            } md:max-w-[75%] w-full h-full bg-gradient-to-r to-prime-jet from-prime-eerie-black shadow-lg md:rounded-xl rounded-l-xl absolute -right-4 top-0 transition-all ease-out duration-[1250ms] flex flex-col md:items-end items-center justify-center p-8 md:text-end text-center lg:gap-12 gap-2 text-white dark:text-prime-eerie-black dark:from-prime-alabaster dark:to-prime-platinum`}
           >
             <h3 className="sm:text-[2em] text-[1.2em] font-bold">
               Our Mission Is To Help You

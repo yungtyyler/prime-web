@@ -48,7 +48,7 @@ const Carousel = ({ slides }: { slides: Slide[] }) => {
       {slides.map((slide) => (
         <SwiperSlide
           key={slide.id}
-          className="flex flex-col items-center w-full h-full border border-gray-600"
+          className="flex flex-col items-center w-full h-full border border-gray-600 dark:border-prime-platinum"
         >
           <div className="bg-prime-jet flex flex-col justify-center text-white">
             <Image

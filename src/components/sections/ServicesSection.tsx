@@ -37,9 +37,11 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="w-full h-full bg-gradient-to-b from-prime-platinum via-prime-alabaster to-white">
+    <section className="w-full h-full bg-gradient-to-b from-prime-platinum via-prime-alabaster to-white dark:from-prime-jet dark:to-black dark:via-prime-eerie-black">
       <div className="section__container">
-        <h2 className="heading-text">Services We Provide</h2>
+        <h2 className="heading-text dark:text-prime-alabaster">
+          Services We Provide
+        </h2>
         <div className="w-full h-full flex items-center justify-center">
           <Carousel slides={slides} />
         </div>

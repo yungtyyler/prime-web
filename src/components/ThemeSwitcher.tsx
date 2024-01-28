@@ -24,12 +24,12 @@ const ThemeSwitcher = () => {
 
   return (
     <div
-      className="relative w-16 h-8 flex items-center bg-charcoal-700 dark:bg-charcoal-300 cursor-pointer rounded-full p-1"
+      className="relative w-16 h-8 flex items-center bg-prime-eerie-black dark:bg-prime-jet cursor-pointer rounded-full p-1"
       onClick={() => setDarkMode(!darkMode)}
     >
       <FaMoon className="text-white" size={17} />
       <div
-        className={`absolute bg-prime-purple-500 dark:bg-prime-green-700 w-6 h-6 rounded-full shadow-md transform transition-all ease-in-out duration-300 ${
+        className={`absolute bg-prime-saffron-700 dark:bg-prime-alabaster w-6 h-6 rounded-full shadow-md transform transition-all ease-in-out duration-300 ${
           darkMode ? 'translate-x-8' : 'translate-x-0'
         }`}
       />

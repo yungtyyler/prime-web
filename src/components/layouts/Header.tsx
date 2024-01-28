@@ -102,10 +102,9 @@ const Header = () => {
             </div>
           ))}
         </nav>
-        {/* uncomment when finished, or restyling for dark mode */}
-        {/* <div className="absolute md:static right-6 self-center">
+        <div className="absolute md:static right-6 self-center z-50">
           <ThemeSwitcher />
-        </div> */}
+        </div>
       </div>
     </header>
   );

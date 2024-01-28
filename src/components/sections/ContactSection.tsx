@@ -10,7 +10,7 @@ const ContactSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="w-full h-full overflow-hidden bg-gradient-to-b from-white via-prime-alabaster to-platinum">
+    <section className="w-full h-full overflow-hidden bg-gradient-to-b from-white via-prime-alabaster to-platinum dark:from-black dark:to-prime-jet dark:via-prime-eerie-black">
       <div className="section__container relative z-20 w-full">
         <div className="flex md:flex-row flex-col gap-6 items-center justify-center w-full h-full">
           <div
@@ -23,9 +23,9 @@ const ContactSection = () => {
             ref={ref}
             className={`${
               isInView ? 'opacity-60' : 'opacity-0 -translate-y-24'
-            } transition-all ease-linear duration-500 delay-1000 bg-gradient-to-tl from-prime-eerie-black to-prime-jet md:w-[1000px] w-[400px] aspect-square rounded-full absolute -z-10 right-[40%] md:top-10`}
+            } transition-all ease-linear duration-500 delay-1000 bg-gradient-to-tl from-prime-eerie-black to-prime-jet dark:from-prime-alabaster dark:to-prime-platinum md:w-[1000px] w-[400px] aspect-square rounded-full absolute -z-10 right-[40%] md:top-10`}
           />
-          <div className="w-full z-20 flex flex-col justify-center p-4 bg-white bg-opacity-75 h-fit mx-4 rounded-lg drop-shadow-2xl md:max-w-[50%]">
+          <div className="w-full z-20 flex flex-col justify-center p-4 bg-white bg-opacity-75 dark:bg-opacity-90 h-fit mx-4 rounded-lg drop-shadow-2xl md:max-w-[50%]">
             <h3 className="md:text-[2em] text-[1.4em] font-bold my-4">
               Get In Touch Today!
             </h3>
