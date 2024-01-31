@@ -24,7 +24,7 @@ const SplitContent = ({ left }: { left?: boolean }) => {
             <h3 className="sm:text-[2em] text-[1.2em] font-bold">
               How We Began
             </h3>
-            <p className="md:max-w-[90%] sm:text-[1.4em] text-[1em] w-full">
+            <p className="md:max-w-[90%] sm:text-[1.2em] text-[1em] w-full">
               Prime Web Solutions was founded in June of 2023 by our{' '}
               <strong>CEO Tyler Varzeas</strong>.{' '}
               <span className="sm:hidden inline">
@@ -57,7 +57,7 @@ const SplitContent = ({ left }: { left?: boolean }) => {
             <h3 className="sm:text-[2em] text-[1.2em] font-bold">
               Our Mission Is To Help You
             </h3>
-            <p className="md:max-w-[90%] sm:text-[1.4em] text-[1em] w-full">
+            <p className="md:max-w-[90%] sm:text-[1.2em] text-[1em] w-full">
               We have a deep passion for web development and a love for helping
               others.{' '}
               <span className="sm:hidden inline">
