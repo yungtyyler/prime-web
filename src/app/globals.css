@@ -27,7 +27,15 @@
 }
 
 .heading-text {
-  @apply uppercase font-bold md:text-[3.4em] text-[2em] md:text-start text-center text-prime-jet;
+  @apply uppercase font-bold md:text-[3.4em] text-[2em] py-10 md:text-start text-center text-prime-jet;
+}
+
+.home__banner {
+  @apply relative md:py-[400px] w-full justify-center md:items-start items-center md:px-10 h-full min-h-screen;
+}
+
+.section__component {
+  @apply flex flex-col gap-4 h-screen relative;
 }
 
 /* Carousel */
@@ -37,4 +45,35 @@
 
 .rightArrow {
   @apply absolute top-[50%] right-[32px] text-[45px] text-white transform -translate-y-[50%] z-10 cursor-pointer;
+}
+
+@media screen and (orientation: landscape) {
+  .section__component {
+    @apply flex flex-col md:flex-row gap-4 relative h-full;
+  }
+
+  .splitContent__div,
+  .splitContent__div__left {
+    @apply w-full h-full flex flex-col gap-4 md:w-1/2 static;
+  }
+
+  .splitContent__div__left {
+    @apply md:items-end;
+  }
+
+  .home__banner {
+    @apply w-full h-fit flex flex-col gap-4 md:flex-row items-center md:px-10 p-4 static;
+  }
+
+  .home__content {
+    @apply w-full flex flex-col gap-4 py-6 my-12;
+  }
+
+  .home__content h1 {
+    @apply text-[2.5em] font-bold py-4;
+  }
+
+  .home__content p {
+    @apply text-[1.5em] font-normal;
+  }
 }

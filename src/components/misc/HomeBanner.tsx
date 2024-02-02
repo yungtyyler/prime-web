@@ -1,6 +1,6 @@
 const HomeBanner = () => {
   return (
-    <div className="w-full bg-black p-4">
+    <div className="w-full h-full bg-black p-4">
       <div className="page__container">
         <div className="my-10 flex flex-col items-center gap-8">
           <h1 className="uppercase text-white font-extrabold text-4xl">

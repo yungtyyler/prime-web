@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="w-full h-full overflow-x-hidden">
       {sections.map((section) => (
-        <div key={section.id} className="w-full h-screen" id={section.name}>
+        <div key={section.id} className="section__component" id={section.name}>
           {section.component}
         </div>
       ))}
