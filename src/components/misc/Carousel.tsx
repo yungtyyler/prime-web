@@ -21,7 +21,7 @@ import 'swiper/css/pagination';
 const Carousel = ({ slides }: { slides: Slide[] }) => {
   return (
     <Swiper
-      className="w-full max-w-6xl max-h-full"
+      className="w-full max-w-4xl max-h-full"
       modules={[Navigation, EffectCoverflow, Autoplay, Pagination]}
       style={
         {

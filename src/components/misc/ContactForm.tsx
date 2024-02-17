@@ -13,7 +13,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="grid grid-cols-2 md:gap-6 gap-2 w-full max-w-[500px] max-h-[350px] md:max-h-full border border-transparent p-4 rounded-xl justify-center bg-prime-jet dark:border-prime-alabaster md:text-[1em] text-[0.8em]"
+      className="grid grid-cols-2 md:gap-6 gap-2 w-full h-full border border-transparent p-4 rounded-xl justify-center bg-prime-jet dark:border-prime-alabaster md:text-[1em] text-[0.8em]"
       onSubmit={(e) => emailHandler(e)}
       id="contact-form"
     >

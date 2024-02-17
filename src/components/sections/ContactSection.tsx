@@ -10,7 +10,7 @@ const ContactSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="w-full h-full min-h-screen overflow-hidden bg-gradient-to-b from-white via-prime-alabaster to-platinum dark:from-black dark:to-prime-jet dark:via-prime-eerie-black">
+    <section className="w-full h-full overflow-hidden bg-gradient-to-b from-white via-prime-alabaster to-platinum dark:from-black dark:to-prime-jet dark:via-prime-eerie-black">
       <div className="section__container relative z-20 w-full h-full">
         <div className="flex md:flex-row flex-col gap-6 items-center justify-center w-full h-full">
           <div
@@ -42,7 +42,7 @@ const ContactSection = () => {
               to speak with us.
             </p>
           </div>
-          <div className="flex items-center justify-center z-30 max-h-full">
+          <div className="flex items-center justify-center z-30">
             <ContactForm />
           </div>
         </div>

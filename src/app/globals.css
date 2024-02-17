@@ -19,7 +19,7 @@
 }
 
 .section__container {
-  @apply flex flex-col w-full h-full px-4 md:py-12 py-4 max-w-6xl mx-auto;
+  @apply flex flex-col w-full h-full px-4 md:py-24 py-4 max-w-6xl mx-auto;
 }
 
 .hero__container {
@@ -31,11 +31,11 @@
 }
 
 .home__banner {
-  @apply relative md:py-[400px] w-full justify-center md:items-start items-center md:px-10 h-full min-h-screen;
+  @apply relative md:py-[400px] py-[200px] w-full justify-center md:items-start items-center md:px-10 h-full md:min-h-screen;
 }
 
 .section__component {
-  @apply flex flex-col gap-4 h-screen relative;
+  @apply flex flex-col gap-4 h-full w-full relative;
 }
 
 /* Carousel */
