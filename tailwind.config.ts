@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
   content: [
@@ -29,6 +30,22 @@ const config: Config = {
       darkMode: "class",
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant, e, postcss }: any) {
+      addVariant("firefox", ({ container, separator }: any) => {
+        const isFirefoxRule = postcss.atRule({
+          name: "-moz-document",
+          params: "url-prefix()",
+        });
+        isFirefoxRule.append(container.nodes);
+        container.append(isFirefoxRule);
+        isFirefoxRule.walkRules((rule: any) => {
+          rule.selector = `.${e(
+            `firefox${separator}${rule.selector.slice(1)}`
+          )}`;
+        });
+      });
+    }),
+  ],
 };
 export default config;

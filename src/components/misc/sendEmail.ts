@@ -5,7 +5,7 @@ import React from 'react';
 import { validateString } from '@/utils/validateString';
 import EmailTemp from '@/email/EmailTemp';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
   const name = formData.get('name');

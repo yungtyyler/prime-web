@@ -1,6 +1,12 @@
 'use client';
 
-import { HamburgerX, LogoSVG, NavLinks, ThemeSwitcher } from '@/components';
+import {
+  HamburgerX,
+  LoginButton,
+  LogoSVG,
+  NavLinks,
+  ThemeSwitcher,
+} from '@/components';
 import Link from 'next/link';
 import { useState, useRef, useEffect, MutableRefObject } from 'react';
 import { usePathname } from 'next/navigation';
@@ -39,7 +45,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-bright-gray z-[100] transition-colors ease-in-out duration-300 bg-transparent absolute top-0">
+    <header className="w-full z-[100] transition-colors ease-in-out duration-300 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 firefox:bg-opacity-90 fixed top-0">
       {/* Sidebar Nav Menu */}
       <div
         ref={menuref}
@@ -56,10 +62,11 @@ const Header = () => {
             Prime Web Solutions
           </h1>
           <div
-            className="text-white cursor-pointer"
+            className="text-white cursor-pointer flex flex-col items-center gap-4"
             onClick={() => handleClick()}
           >
             <HamburgerX open={open} />
+            <LoginButton sidebar />
           </div>
         </div>
         <div className="flex flex-col items-start gap-8 py-14 border-b border-gray-600">
@@ -78,16 +85,16 @@ const Header = () => {
       </div>
 
       {/* Desktop Nav Menu */}
-      <div className="md:max-w-6xl mx-auto w-full p-4 flex justify-between">
+      <div className="md:max-w-6xl mx-auto w-full p-4 flex justify-between items-center">
         <div
-          className="md:hidden absolute top-0 bottom-0 flex items-center cursor-pointer"
+          className="flex md:hidden items-center cursor-pointer"
           onClick={() => handleClick()}
         >
           <HamburgerX open={open} />
         </div>
-        <div className="flex items-center gap-4 mx-auto md:mx-0">
+        <Link href="/" className="flex items-center">
           <LogoSVG className="text-prime-eerie-black" />
-        </div>
+        </Link>
 
         <nav className="md:flex items-center gap-10 hidden text-prime-purple-700">
           {NavLinks.map((link, i) => (
@@ -102,8 +109,11 @@ const Header = () => {
             </div>
           ))}
         </nav>
-        <div className="absolute md:static right-6 self-center z-50">
+        <div className="flex items-center gap-6">
           <ThemeSwitcher />
+          <div className="hidden md:block">
+            <LoginButton />
+          </div>
         </div>
       </div>
     </header>

@@ -27,7 +27,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col lg:border-none border-b border-white border-opacity-30 w-full py-4 lg:py-0">
+        {/* <div className="flex flex-col lg:border-none border-b border-white border-opacity-30 w-full py-4 lg:py-0">
           <div className="flex">
             <h1 className="w-full uppercase font-bold">Useful Links</h1>
           </div>
@@ -42,7 +42,7 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-4 lg:border-none border-b border-white border-opacity-30 w-full py-4 lg:py-0">
           <div className="flex items-center gap-2">
             <Image
