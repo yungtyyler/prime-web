@@ -66,7 +66,7 @@ const Header = () => {
             onClick={() => handleClick()}
           >
             <HamburgerX open={open} />
-            <LoginButton sidebar />
+            {/* <LoginButton sidebar /> */}
           </div>
         </div>
         <div className="flex flex-col items-start gap-8 py-14 border-b border-gray-600">
@@ -111,9 +111,9 @@ const Header = () => {
         </nav>
         <div className="flex items-center gap-6">
           <ThemeSwitcher />
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <LoginButton />
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
