@@ -1,0 +1,4 @@
+# block list
+User-agent: *
+
+Sitemap: https://primewebsolutions.org/sitemap.xml
