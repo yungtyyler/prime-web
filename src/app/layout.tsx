@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: `Prime Web Solutions, a software development company, is committed to crafting top-tier web applications that elevate businesses through impactful digital interactions. Our team specializes in delivering high-quality custom websites and internal applications tailored to fuel growth and success. Explore our innovative approach to software and web development, designed to provide businesses with the competitive edge they need in today's dynamic digital landscape. Elevate your online presence with Prime Web Solutions - where excellence meets technology to redefine the digital experience for your business.`,
 };
 
-const GOOGLE_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
+const GOOGLE_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!;
 
 export default function RootLayout({
   children,
@@ -24,7 +24,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <Analytics id="" />
+        <Analytics id={GOOGLE_ID} />
       </body>
     </html>
   );
