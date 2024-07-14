@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${roboto.className}`}>
+      <body
+        className={`${roboto.className} dark:bg-prime-jet bg-prime-alabaster relative min-h-screen flex flex-col`}
+      >
         <Header />
         <main className="grow relative w-full flex flex-col tracking-wider">
           {children}

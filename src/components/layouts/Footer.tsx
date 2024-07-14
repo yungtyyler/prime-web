@@ -1,9 +1,4 @@
-import {
-  NavLinks,
-  FooterLinks,
-  InstagramDark,
-  LinkedInDark,
-} from '@/components';
+import { NavLinks, InstagramDark, LinkedInDark } from '@/components';
 import Link from 'next/link';
 import Image from 'next/image';
 
